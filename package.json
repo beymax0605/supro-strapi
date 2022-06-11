@@ -1,0 +1,41 @@
+{
+  "name": "martury_strapi_api_3x",
+  "private": true,
+  "version": "1.2.0",
+  "author": "nouthemes",
+  "description": "Martfury Strapi API ",
+  "homepage": "https://themeforest.net/item/martfury-multipurpose-marketplace-react-ecommerce-template/25783100",
+  "scripts": {
+    "dev": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@strapi/utils": "^4.1.12",
+    "knex": "<0.20.0",
+    "slugify": "^1.4.5",
+    "sqlite3": "^5.0.8",
+    "strapi": "^3.6.10",
+    "strapi-admin": "^3.2.5",
+    "strapi-connector-bookshelf": "^3.2.5",
+    "strapi-plugin-content-manager": "^3.2.5",
+    "strapi-plugin-content-type-builder": "^3.2.5",
+    "strapi-plugin-documentation": "^3.2.5",
+    "strapi-plugin-email": "^3.2.5",
+    "strapi-plugin-graphql": "^3.2.5",
+    "strapi-plugin-passwordless": "^4.0.7",
+    "strapi-plugin-upload": "^3.2.5",
+    "strapi-plugin-users-permissions": "^3.2.5",
+    "strapi-utils": "^3.2.5"
+  },
+  "strapi": {
+    "uuid": "e005796b-a27a-4a72-a8df-139bb3cd25f9"
+  },
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

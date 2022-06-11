@@ -1,0 +1,118 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "products",
+  "info": {
+    "name": "product",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "test": {
+      "type": "string"
+    },
+    "product_categories": {
+      "collection": "product-categories",
+      "via": "products",
+      "dominant": true
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "sale_price": {
+      "type": "decimal"
+    },
+    "brands": {
+      "collection": "brand",
+      "via": "products",
+      "dominant": true
+    },
+    "out_of_stock": {
+      "type": "boolean",
+      "default": false
+    },
+    "variants": {
+      "type": "component",
+      "repeatable": true,
+      "component": "variants.variants"
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true
+    },
+    "is_sale": {
+      "type": "boolean",
+      "default": false
+    },
+    "thumbnail": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "collections": {
+      "collection": "collection",
+      "via": "products"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "thumbnail_back": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "thumbnail_large": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "short_description": {
+      "type": "text"
+    },
+    "badge": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "price_1": {
+      "type": "decimal"
+    },
+    "price_2": {
+      "type": "decimal"
+    },
+    "price_3": {
+      "type": "decimal"
+    }
+  }
+}
